@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- incio do nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Marca</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(Página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#planos">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- final do nav -->
+
+        <!-- inicio do slider -->
+        <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/codigo.jpg" alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/equipe.jpg" alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/ideia.jpg" alt="Terceiro Slide">
+                </div>
+                <!-- 4 img -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/equipe.jpg" alt="Terceiro Slide">
+                </div>
+                <!-- fim 4 img -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </section>
+        <!-- fim do slider -->
+
+        <!-- inicio card group  -->
+        <h2 id="servicos">Serviços</h2>
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="img/icon-ux.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">UX UI Design</h5>
+                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/icon-design.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Criação e Design</h5>
+                    <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/icon-dev.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Layout Respoonsivo</h5>
+                    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                </div>
+            </div>
+        </div>
+        <!-- fim card group  -->
+
+        <!-- inicio planos -->
+        <h2 id="planos">Planos</h2>
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Básico</h4>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title pricing-card-title">$9,90 <small class="text-muted">/ mês</small></h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>10 usuários</li>
+                        <li>2 GB de armazenamento</li>
+                        <li>Suporte por email</li>
+                        <li>Acesso ao centro de ajuda</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Cadastre-se</button>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title pricing-card-title">$14,90 <small class="text-muted">/ mês</small></h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>20 usuários</li>
+                        <li>10 GB de armazenamento</li>
+                        <li>Suporte por email prioritário</li>
+                        <li>Acesso ao centro de ajuda</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Conhecer</button>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Premium</h4>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title pricing-card-title">$29 <small class="text-muted">/ mês</small></h2>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>30 usuários</li>
+                        <li>15 GB de armazenamento</li>
+                        <li>Suporte por email e telefone</li>
+                        <li>Acesso ao centro de ajuda</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">Contate-nos</button>
+                </div>
+            </div>
+        </div>
+        <!-- fim planos -->
+
+        <!-- inicio da div form e mapa -->
+        <h2 id="contato" class="mb-3">Contato</h2>
+        <div class="row" id="contato">
+            <!-- inicio form -->
+            <form class="col-6">
+                <div class="form-row align-items-center">
+                    <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput">Nome</label>
+                        <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Seu nome">
+                    </div>
+                    <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Usuário</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="E-mail">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-12">
+                        <label for="validationTextarea"> </label>
+                        <textarea class="form-control" id="validationTextarea" placeholder="Sua mensagem" rows="7" required></textarea>
+                        <div class="invalid-feedback"> </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+                    </div>
+                </div>
+            </form>
+            <!-- fim do form -->
+
+            <!-- inicio do mapa -->
+            <div class="col-6 mb-3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.084187565717!2d-46.654521585022216!3d-23.565419684680865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7947976cb%3A0xcfae32dae64ebfda!2sAv.+Paulista%2C+1009+-+Bela+Vista%2C+S%C3%A3o+Paulo+-+SP%2C+01310-100!5e0!3m2!1spt-BR!2sbr!4v1566484761663!5m2!1spt-BR!2sbr"
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <!-- fim  do mapa -->
+
+        </div>
+        <!-- fim do div form e mapa envolvido por row-->
+
+        <!-- inicio rodapé-->
+        <div class="bg-dark text-white">
+            <footer class="ml-3">
+                <address class="pt-3">
+                    <b>Av.Paulista, 1009</b><br>
+                    São Paulo - SP<br>
+                    CEP: 01311-100 <br>
+                    Tel: 1111-1111
+                </address>
+            </footer>
+            <footer class="text-center">
+                &copy; Impacta Treinamentos - Direitos reservados.
+            </footer>
+        </div>
+        <!--fim rodapé-->
+<!--mailchimp benchmark email-->
+    
+    </div>
+    <!-- inicio do script do bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
